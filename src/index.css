@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Syne", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-background: #131313;
+  --color-surface: #1A1A1A;
+  --color-primary: #ddb7ff;
+  --color-on-primary: #490080;
+  --color-text-dim: #cfc2d6;
+  --color-text-light: #e5e2e1;
+  --color-outline: #4d4354;
+  
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(26, 26, 26, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(220, 220, 231, 0.1);
+  }
+
+  .hero-gradient {
+    background: radial-gradient(circle at 50% 50%, rgba(183, 109, 255, 0.1) 0%, transparent 70%);
+  }
+}
+
+body {
+  @apply bg-background text-text-light font-sans selection:bg-primary selection:text-on-primary;
+}
+
+h1, h2, h3, h4 {
+  @apply font-headline;
+}
