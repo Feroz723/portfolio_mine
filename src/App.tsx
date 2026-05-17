@@ -34,7 +34,7 @@ const Navbar = () => (
         <a href="#experience" className="text-text-dim hover:text-primary transition-colors duration-300">Experience</a>
         <a href="#contact" className="text-text-dim hover:text-primary transition-colors duration-300">Contact</a>
       </div>
-      <a href="mailto:fferoz112233@gmail.com" className="bg-primary text-on-primary px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:scale-95 transition-transform cursor-pointer">
+      <a href="mailto:fferoz112233@gmail.com" className="bg-primary text-on-primary px-4 md:px-6 py-2 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest hover:scale-95 transition-transform cursor-pointer">
         Get in Touch
       </a>
     </nav>
@@ -78,7 +78,7 @@ const Hero = () => {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.2, duration: 0.8 }}
-        className="text-6xl md:text-8xl font-black max-w-5xl mx-auto mb-8 leading-[0.9] tracking-tighter"
+        className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black max-w-5xl mx-auto mb-8 leading-[0.9] tracking-tighter"
       >
         I'M FEROZ NAGURU <br/>
         <span className="text-primary italic">AI & SOFTWARE DEVELOPER</span>
@@ -234,14 +234,14 @@ const Expertise = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-24">
           <span className="text-xs font-bold text-primary uppercase tracking-[0.2em] block mb-4">Core Expertise</span>
-          <h2 className="text-5xl md:text-6xl font-bold mb-12 leading-tight">
+          <h2 className="text-4xl md:text-6xl font-bold mb-12 leading-tight">
             Simplifying complexity with <span className="text-primary">solutions.</span>
           </h2>
           
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
             {stats.map(stat => (
               <div key={stat.label}>
-                <div className="text-6xl md:text-7xl font-black text-primary leading-none">{stat.value}</div>
+                <div className="text-5xl md:text-7xl font-black text-primary leading-none">{stat.value}</div>
                 <p className="text-[10px] font-bold text-text-dim uppercase tracking-widest mt-4">{stat.label}</p>
               </div>
             ))}
@@ -307,7 +307,7 @@ const Journey = () => {
 
   return (
     <section className="py-32 max-w-7xl mx-auto px-6 md:px-12" id="experience">
-      <div className="flex flex-col lg:flex-row gap-24">
+      <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
         <div className="lg:w-1/3 lg:sticky lg:top-32 h-fit">
           <SectionHeader 
             label="Journey"
@@ -439,8 +439,8 @@ const Testimonials = () => {
           </div>
         </div>
         
-        <div className="lg:col-span-8 glass rounded-3xl p-12 md:p-16 relative overflow-hidden flex flex-col">
-          <div className="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
+        <div className="lg:col-span-8 glass rounded-3xl p-8 md:p-16 relative overflow-hidden flex flex-col">
+          <div className="absolute top-0 right-0 p-8 md:p-12 opacity-5 pointer-events-none">
             <Layers className="w-40 h-40" />
           </div>
           
@@ -491,7 +491,7 @@ const Testimonials = () => {
 const Contact = () => (
   <section className="py-32 bg-white/[0.02]" id="contact">
     <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
-      <h2 className="text-5xl md:text-7xl font-bold mb-16 leading-[0.9] tracking-tighter">
+      <h2 className="text-4xl md:text-7xl font-bold mb-16 leading-[0.9] tracking-tighter">
         LET'S MAKE SOMETHING <br/>
         <span className="text-primary">AWESOME TOGETHER!</span>
       </h2>
@@ -501,9 +501,9 @@ const Contact = () => (
           action="mailto:fferoz112233@gmail.com"
           method="POST"
           encType="text/plain"
-          className="space-y-12"
+          className="space-y-8 md:space-y-12"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             <div className="relative group">
               <input 
                 required
