@@ -131,13 +131,13 @@ const Projects = () => {
       url: "https://techpick.tech/downloader"
     },
     {
-      title: "Progress Tracker",
-      desc: "A full-stack progress tracking app for monitoring goals, tasks, and milestones with real-time updates.",
-      tags: ["React", "Node.js", "MongoDB"],
-      color: "#10B981",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAZlnJTcc-QiHwPDCeQwcjJPYE_rt55xLKbjs3Jj0KCtM7X-kDMqTPXqwrRIn0n2ZICofJNug1tKD1QvGePvBK3AaG96aQKxaZaFhlFNrgsq0M1XYCPGzXA3kq7XJa9JOoMwNJ2U32WqP0_vzp_4AlBxvCmx-I1Hh0h0a3kDr07OIQwpUlK6cOBCMQPmHIOJEyf2PggYyO-mo4PPmHQFGmvZb1R2c79OXg3eyAaJ5gG6-Ll4vvWRiS8NJNUOx0nEBttD6_Dd_TPx9GT",
-      badge: "2025",
-      url: "https://progress-tracker-z7mh.onrender.com"
+      title: "Halo",
+      desc: "Beautifully designed task manager with smooth animations, elegant themes, and offline task management.",
+      tags: ["Kotlin", "Android", "Offline"],
+      color: "#6366F1",
+      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCkTVTfc0jJqq_duQyA8VMR2XmzMzS9ReEqlh8-1yZK2qe7wFcG_toG91oIHdYyaRdzaQ-EpmrqPQOScTQ82MbfvXLqyVDuBbAKHSBE-pOYKj3yI2Ma7GdCOVOU7OQgy4V8Cb9pfMAdqcpAcMktlz046L0RHyIs6nlGJ5aHLY1TSCp_FwnqHG0WHdaIfyPmyhWR79yt3oUhEXxaa_2aAxlmtbasfe0IZPoUor1B411aq5nWcpZCO2glB6PbRo-sJOpHv-5QlUNlfWf2",
+      badge: "2026",
+      url: "https://www.amazon.com/Prism-Apps-Halo/dp/B0H5QL9957"
     }
   ];
 
